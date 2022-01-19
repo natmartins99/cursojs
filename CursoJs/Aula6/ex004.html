@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First program</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt("What is your name? ");
+        document.write(`Hello, ${nome}! Your name has ${nome.length} letters.`);
+        document.write(`<br><br>Your name in uppercase is ${nome.toUpperCase()}`);
+        document.write(`<br>Your name in lowercase is ${nome.toLowerCase()}.`);
+    </script>
+</body>
+</html>

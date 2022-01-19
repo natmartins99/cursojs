@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONSULADO BRASILEIRO</title>
+</head>
+<body>
+    <h1>Pessoa física</h1>
+    Nacionalidade: <input type="string" name="txtnac" id="txtnac">
+    <input type="button" value="Verificar" onclick="nacinalidade()">
+    <div id="n"></div>
+    <script>
+        function nacionalidade(){
+            var txtnacio = window.document.querySelector('input#txtnac')
+            var nacio = String(txtnacio.value)
+            n.innerHTML = `<p>Sua nacionalidade é <strong>${nacio}</strong></p>`
+            if (nacio != br) {
+                n.innerHTML += `<p>Voce é <strong>estrangeiro</strong>!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
